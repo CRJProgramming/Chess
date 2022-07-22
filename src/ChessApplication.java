@@ -10,12 +10,6 @@ public class ChessApplication {
         board = new Board(BOARD_HEIGHT,BOARD_WIDTH);
     }
 
-
-    public Board getBoard() {
-
-        return board;
-    }
-
     public static void main(String[] args) {
 
         new ChessApplication();
