@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Game {
@@ -65,12 +64,34 @@ public class Game {
 
     }
 
-    public void checkForCheckmate(){
+    public boolean checkForCheckmate(){
+        if(possibleMoves.length() == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean checkForCheck(){
+        if(checkForCheckmate()){
+            initiateGameOver();
+        }
+        if(opponentPossibleMoves.contains(King.getPosition)){
+            return true;
+        }
+        else{
+            return false;
+        }
 
     }
 
-    public void checkForCheck(){
-        checkForCheckmate();
+    public void initiateGameOver(){
+        running = false;
+        if(whiteTotalValue > blackTotalValue){
+            System.out.println("Checkmate! White wins");
+        }else{
+            System.out.println("Checkmate! Black wins");
+        }
     }
 
     public void run(){

@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bac4fd97-254b-4d03-af05-a8216ecf1cc7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bac4fd97-254b-4d03-af05-a8216ecf1cc7" name="Changes" comment="Begun creation of game class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChessApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChessApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +66,17 @@
       <workItem from="1658524537044" duration="874000" />
       <workItem from="1658526505090" duration="1194000" />
       <workItem from="1658545443339" duration="1871000" />
-      <workItem from="1658621671147" duration="12407000" />
+      <workItem from="1658621671147" duration="13059000" />
+      <workItem from="1658713972725" duration="1144000" />
     </task>
+    <task id="LOCAL-00001" summary="Begun creation of game class">
+      <created>1658636621555</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658636621555</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,5 +93,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Begun creation of game class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begun creation of game class" />
   </component>
 </project>
