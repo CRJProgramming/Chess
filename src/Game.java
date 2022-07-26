@@ -22,29 +22,29 @@ public class Game {
 
     public void initializeBoard(){
         for(int x=0; x<board.getWidth(); x++){
-            board.getBoard()[1][x] = "BlackPawn"; //new Pawn(Black) *Use Pawn object when created
+            board.getBoard()[1][x] = "BPn"; //new Pawn(Black) *Use Pawn object when created
             blackTotalValue++;
-            board.getBoard()[6][x] = "WhitePawn"; //new Pawn(White) Pawn object should have a point value of 1
+            board.getBoard()[6][x] = "WPn"; //new Pawn(White) Pawn object should have a point value of 1
             whiteTotalValue++;
         }
-        board.getBoard()[7][0] = "WhiteRook";  //Rook object should have a point value of 5
-        board.getBoard()[7][7] = "WhiteRook";
-        board.getBoard()[7][1] = "WhiteKnight";  //Knight object should have a point value of 3
-        board.getBoard()[7][6] = "WhiteKnight";
-        board.getBoard()[7][2] = "WhiteBishop";  //Bishop object should have a point value of 3
-        board.getBoard()[7][5] = "WhiteBishop";
-        board.getBoard()[7][3] = "WhiteQueen";   //Queen object should have a point value of 9
-        board.getBoard()[7][4] = "WhiteKing";
+        board.getBoard()[7][0] = "WRk";  //Rook object should have a point value of 5
+        board.getBoard()[7][7] = "WRk";
+        board.getBoard()[7][1] = "WKn";  //Knight object should have a point value of 3
+        board.getBoard()[7][6] = "WKn";
+        board.getBoard()[7][2] = "WBp";  //Bishop object should have a point value of 3
+        board.getBoard()[7][5] = "WBp";
+        board.getBoard()[7][3] = "WQn";   //Queen object should have a point value of 9
+        board.getBoard()[7][4] = "WKg";
         whiteTotalValue += 31;
 
-        board.getBoard()[0][0] = "BlackRook";
-        board.getBoard()[0][7] = "BlackRook";
-        board.getBoard()[0][1] = "BlackKnight";
-        board.getBoard()[0][6] = "BlackKnight";
-        board.getBoard()[0][2] = "BlackBishop";
-        board.getBoard()[0][5] = "BlackBishop";
-        board.getBoard()[0][3] = "BlackQueen";
-        board.getBoard()[0][4] = "BlackKing";
+        board.getBoard()[0][0] = "BRk";
+        board.getBoard()[0][7] = "BRk";
+        board.getBoard()[0][1] = "BKn";
+        board.getBoard()[0][6] = "BKnt";
+        board.getBoard()[0][2] = "BBp";
+        board.getBoard()[0][5] = "BBp";
+        board.getBoard()[0][3] = "BQn";
+        board.getBoard()[0][4] = "BKg";
         blackTotalValue += 31;
 
     }
@@ -85,6 +85,19 @@ public class Game {
 
     }
 
+    public void printBoard(){
+        for(int x=0; x < board.getHeight(); x++){
+            System.out.println("-------------------------------------------------");
+            for(int y=0; y < board.getWidth(); y++){
+                System.out.print("| "+board.getBoard()[x][y]+" ");
+            }
+            System.out.print("|");
+            System.out.println();
+        }
+        System.out.println("-------------------------------------------------");
+
+    }
+
     public void initiateGameOver(){
         running = false;
         if(whiteTotalValue > blackTotalValue){
@@ -95,9 +108,11 @@ public class Game {
     }
 
     public void run(){
+        printBoard();
         while(running){
             String move = nextMove();
             checkForCheck();
+            printBoard();
 
         }
     }

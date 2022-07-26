@@ -10,6 +10,15 @@ public class Board {
         HEIGHT = height;
         WIDTH = width;
         board = new String[height][width];
+
+
+        for (int row = 0; row < board.length; row++)
+        {
+            for (int col = 0; col < board[row].length; col++)
+            {
+                board[row][col] = "   ";
+            }
+        }
     }
 
     public String[][] getBoard(){

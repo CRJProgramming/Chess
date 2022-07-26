@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bac4fd97-254b-4d03-af05-a8216ecf1cc7" name="Changes" comment="Begun creation of game class">
+    <list default="true" id="bac4fd97-254b-4d03-af05-a8216ecf1cc7" name="Changes" comment="Created pseudocode as potential methods in game class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChessApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChessApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +69,8 @@
       <workItem from="1658526505090" duration="1194000" />
       <workItem from="1658545443339" duration="1871000" />
       <workItem from="1658621671147" duration="13059000" />
-      <workItem from="1658713972725" duration="1144000" />
+      <workItem from="1658713972725" duration="1704000" />
+      <workItem from="1658797224506" duration="856000" />
     </task>
     <task id="LOCAL-00001" summary="Begun creation of game class">
       <created>1658636621555</created>
@@ -76,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658636621555</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created pseudocode as potential methods in game class">
+      <created>1658715631235</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658715631235</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Begun creation of game class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Begun creation of game class" />
+    <MESSAGE value="Created pseudocode as potential methods in game class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created pseudocode as potential methods in game class" />
   </component>
 </project>
